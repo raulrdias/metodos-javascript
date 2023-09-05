@@ -4,34 +4,34 @@ Neste arquivo, apresentamos exemplos de vários métodos JavaScript úteis para 
 
 ## Método 1: `includes()`
 
-O método `includes()` verifica se um elemento está presente em um array e retorna `true` ou `false`.
+"O método `includes()` verifica se uma substring está presente em uma string e retorna `true` ou `false`."
 
 **Exemplo:**
 ```javascript
-const frutas = ['maçã', 'banana', 'pera'];
-const contemBanana = frutas.includes('banana');
-console.log(contemBanana); // Output: true
+const texto = 'Olá, mundo!';
+const contemOla = texto.includes('Olá');
+console.log(contemOla); // Output: true
 ```
 ## Método 2: `indexOf()`
 
-O método `indexOf()` retorna o índice da primeira ocorrência de um elemento em um array, ou -1 se não for encontrado.
+"O método `indexOf()` retorna o índice da primeira ocorrência de uma substring em uma string, ou -1 se a substring não for encontrada."
 
 **Exemplo:**
 ```javascript
-const numeros = [10, 20, 30, 40, 50];
-const indice = numeros.indexOf(30);
-console.log(indice); // Output: 2
+const texto = 'Olá, mundo!';
+const indiceOla = texto.indexOf('l');
+console.log(indiceOla); // Output: 1
 ```
 
 ## Método 3: `slice()`
 
-O método `slice()` cria uma cópia superficial de parte de um array e a retorna como um novo array.
+"O método `slice()` cria uma cópia superficial de parte de uma string e a retorna como uma nova string."
 
 **Exemplo:**
 ```javascript
-const cores = ['vermelho', 'verde', 'azul', 'amarelo'];
-const novaArray = cores.slice(1, 3); // Copia os elementos do índice 1 (inclusive) ao 3 (exclusive)
-console.log(novaArray); // Output: ['verde', 'azul']
+const texto = 'Isso é uma string de exemplo';
+const novaString = texto.slice(5, 13); // Pega os caracteres do índice 5 (inclusive) ao 13 (exclusive)
+console.log(novaString); // Output: 'é uma st'
 ```
 
 ## Método 4: `replace()`
